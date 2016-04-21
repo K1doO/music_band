@@ -350,6 +350,10 @@
 	display: inline-block;
 }
 
+
+
+
+
 .articles-container .article:not(:first-child) {
 	margin-left: 20px;
 }
@@ -444,20 +448,107 @@
 }
 
 
-
-
 .content-footer .article:not(:first-child) {
-	
+	margin-left: 60px;
+	width: 330px;
 }
+
+.wrapper-sm {
+	width: 289px;
+}
+
+.article-xs {
+	width: 286px;
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 50px;
+}
+
+.article-xs .wrapper-xs {
+	width: 100%;
+}
+
+.wrapper-xs .wrapper-container {
+	padding: 20px 0 50px 0;
+	position: relative;
+}
+
+.wrapper-xs .wrapper-container:not(:last-child) {
+	border-bottom: 1px dashed #393139;
+}
+
+.wrapper-xs .wrapper-container .date {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 8px;
+}
+
+.wrapper-xs .wrapper-container .date span {
+	font-size: 17px;
+	color: #8b5d88;
+	display: block;
+	line-height: 24px;
+	font-weight: 600;
+	font-family: sans-serif;
+}
+
+.wrapper-xs .wrapper-container .date .number {
+	font-size: 28px;
+}
+
+.wrapper-xs .wrapper-container .img-container {
+	display: inline-block;
+	vertical-align: top;
+	padding: 5px;
+	cursor: pointer;
+}
+
+.wrapper-xs .wrapper-container .info {
+	display: inline-block;
+	width: 158px;
+	margin-left: 7px;
+}
+
+.wrapper-xs .wrapper-container .info h5 {
+	color: #FFF;
+	font-size: 13px;
+  font-family: sans-serif;
+	cursor: pointer;
+}
+
+.wrapper-xs .wrapper-container .info h5:hover {
+	color: #8b5d88;
+}
+
+.wrapper-xs .wrapper-container .info p {
+	color: #606060;
+	font-size: 13px;
+  font-family: sans-serif;
+	line-height: 14px;
+	width: 147px;
+}
+
+.wrapper-xs .wrapper-container .button {
+	position: absolute;
+	bottom: 30px;
+	left: 55px;
+}
+
+.wrapper-xs .wrapper-container .button:hover {
+	color: #606060;
+}
+
+
+
 
 .content-footer .article:not(:last-child) {
 
 	border-right: 1px solid #393139;
 }
 
-.content-footer .article .title {
+.content-footer .article .title , .article-xs .wrapper-xs .title {
 	color: #606060;
-	font-size: 30px;
+	font-size: 28px;
 	font-weight: 600;
 	font-style: italic;
 }
@@ -483,7 +574,7 @@
 	padding-top: 10px;
 }
 
-.content-footer .article .button {
+.content-footer .article .button , .article-xs .wrapper-xs .button {
 	color: #8b5d88;
 	font-size: 13px;
 	cursor: pointer;
@@ -515,4 +606,64 @@
 
 .item-container .container-info .info {
 	color: #FFF;
+}
+
+.footer {
+	background: url("images/footer_bg1.jpg")
+}
+
+.footer .wrapper {
+	width: 63%;
+	margin: 0 auto;
+}
+
+.footer .wrapper .policy-container , .footer .wrapper .social-media {
+	display: inline-block;
+	padding: 30px 0 30px 0;
+}
+
+.footer .wrapper .policy-container h5 {
+	color: #fff;
+	font-size: 11px;
+	font-family: sans-serif;
+}
+
+.footer .wrapper .policy-container h5 span {
+	cursor: pointer;
+}
+
+.footer .wrapper .policy-container h5 span:hover {
+	color: #8b5d88;
+}
+
+.footer .wrapper .social-media {
+	float: right;
+}
+
+.wrapper .social-media .item {
+	display: inline-block;
+	margin-right: 3px;
+	cursor: pointer;
+}
+
+.wrapper .social-media .item:not(:first-child) img:hover {
+	-webkit-transform: rotateY(360deg);
+	transition: 0.4s;
+}
+
+.back-top {
+	width: 45px;
+	height: 45px;
+	background: #606060;
+	position: fixed;
+	bottom: 30px;
+	right: 15px;
+}
+
+.back-top:hover {
+	background: #8b5d88;
+}
+
+.back-top img {
+	padding: 13px 0px 0px 7px;
 }
